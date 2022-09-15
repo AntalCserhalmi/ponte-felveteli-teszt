@@ -15,13 +15,13 @@ const GeneralInfo = (props: {formData: FormData, setFormData: SetFormData}) => {
         
         if (name.length > 255){
             setErrorMessageName("A projekt neve nem lehet hosszabb mint 255 karakter!");
-            props.setFormData({...props.formData, error: true});
+            props.setFormData({...props.formData, buttonState: true});
         }else if (name.length < 3){
             setErrorMessageName("A projekt neve legalább 3 karakter hosszú legyen!");
-            props.setFormData({...props.formData, error: true});
+            props.setFormData({...props.formData, buttonState: true});
         }else{
             setErrorMessageName("");
-            props.setFormData({...props.formData, name: name, error: false});
+            props.setFormData({...props.formData, name: name, buttonState: false});
         }
     };
 
@@ -31,13 +31,13 @@ const GeneralInfo = (props: {formData: FormData, setFormData: SetFormData}) => {
 
         if (description.length > 500){
             setErrorMessageDescription("A projekt leírás nem lehet hosszabb mint 500 karakter!");
-            props.setFormData({...props.formData, error: true});
+            props.setFormData({...props.formData, buttonState: true});
         }else if (description.length !== 0 && description.length < 50){
             setErrorMessageDescription("A projekt leírásnak vagy üresnek, vagy minimum 50 karakter hosszúnak kell lennie!");
-            props.setFormData({...props.formData, error: true});
+            props.setFormData({...props.formData, buttonState: true});
         }else{
             setErrorMessageDescription("");
-            props.setFormData({...props.formData, description: description, error: false});
+            props.setFormData({...props.formData, description: description, buttonState: false});
         }
     };
 

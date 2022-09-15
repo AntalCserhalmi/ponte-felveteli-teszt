@@ -17,7 +17,7 @@ const Employees = (props: {formData: FormData, setFormData: SetFormData}) => {
             if (employees[i].name == event.currentTarget.id){
                 employees.splice(i, 1);
 
-                props.setFormData({...props.formData, employees: employees, error: employees.length === 0});
+                props.setFormData({...props.formData, employees: employees, buttonState: employees.length === 0});
                 break;
             }
         }
@@ -31,7 +31,7 @@ const Employees = (props: {formData: FormData, setFormData: SetFormData}) => {
         props.setFormData({
             ...props.formData, 
             employees: employees,
-            error: employees.length === 0
+            buttonState: employees.length === 0
         });
     };
 
@@ -39,7 +39,7 @@ const Employees = (props: {formData: FormData, setFormData: SetFormData}) => {
         const name = event.target.value;
         if (name.length <= 0){
             setErrorMessageName("A kolléga neve nem lehet üres!");
-            props.setFormData({...props.formData, error: true});
+            props.setFormData({...props.formData, buttonState: true});
         }else{
             setErrorMessageName("");
             setEmployeeName(name);
@@ -50,17 +50,17 @@ const Employees = (props: {formData: FormData, setFormData: SetFormData}) => {
         const position = event.target.value;
         if (position.length <= 0){
             setErrorMessagePosition("A kolléga pozíciója nem lehet üres!");
-            props.setFormData({...props.formData, error: true});
+            props.setFormData({...props.formData, buttonState: true});
         }else{
             setErrorMessagePosition("");
             setEmployeePosition(position);
-            props.setFormData({...props.formData, error: true});
+            props.setFormData({...props.formData, buttonState: true});
         }
     };
 
     useEffect(() => {
         if (props.formData.employees.length == 0)
-            props.setFormData({...props.formData, error: true});
+            props.setFormData({...props.formData, buttonState: true});
     }, []);
 
     return(

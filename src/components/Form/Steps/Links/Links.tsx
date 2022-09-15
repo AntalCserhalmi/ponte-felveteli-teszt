@@ -13,7 +13,7 @@ const Links = (props: {formData: FormData; setFormData: SetFormData}) => {
             if (links[i] === event.currentTarget.id){
                 links.splice(i, 1);
 
-                props.setFormData({...props.formData, links: links, error: false});
+                props.setFormData({...props.formData, links: links, buttonState: false});
                 break;
             }
         }
@@ -26,7 +26,7 @@ const Links = (props: {formData: FormData; setFormData: SetFormData}) => {
         props.setFormData({
             ...props.formData,
             links: links,
-            error: links.length === 0
+            buttonState: links.length === 0
         });
     };
 

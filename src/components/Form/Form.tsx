@@ -16,7 +16,7 @@ export type FormData = {
     description: string;
     employees: Array<Employee>;
     links: Array<string>;
-    error: boolean;
+    buttonState: boolean;
 }
 
 export type SetFormData = (formData: FormData) => void;
@@ -32,7 +32,7 @@ const Form = ():JSX.Element => {
         description: "",
         employees: new Array<Employee>(),
         links: new Array<string>(),
-        error: false
+        buttonState: false
     });
     const FormTitles = ["Általános információk", "Dolgozó kollégák", "Fontos linkek"];
     
@@ -72,7 +72,7 @@ const Form = ():JSX.Element => {
     };
 
     useEffect(() => {
-        if (formData.error){
+        if (formData.buttonState){
             setNextButtonState(true);
         }else if (page === FormTitles.length - 1){
             setNextButtonState(true);
@@ -81,7 +81,7 @@ const Form = ():JSX.Element => {
         }else{
             setNextButtonState(false);
         }
-    }, [formData.error]);
+    }, [formData.buttonState]);
 
     return (
         <div className={classes.form}>
@@ -101,7 +101,7 @@ const Form = ():JSX.Element => {
                             className={classes.formBtn}
                             disabled={page === 0}
                             onClick={() => {
-                                formData.error = false;
+                                formData.buttonState = false;
                                 setPage(last => last - 1);
                             }}
                         >Vissza</button>
