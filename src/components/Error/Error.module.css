@@ -1,0 +1,41 @@
+.wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: calc(100vh - 4rem);
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    font-size: 3.0rem;
+    font-family: 600;
+    color: rgb(193,203,235);
+}
+
+.homeBtn{
+    padding: 1.0rem;
+    margin: 1.3rem;
+
+    width: 15rem;
+
+    border: 3px solid rgb(193,203,235);
+    border-radius: 10px;
+    color: rgb(193,203,235);
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    
+    transition: all 300ms ease-in-out;
+}
+
+.homeBtn:hover{
+    transform: scale(1.05);
+}

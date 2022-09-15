@@ -1,0 +1,14 @@
+.cards{
+    top: 4rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardsGrid{
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 500px);
+    gap: 2.5rem;
+}

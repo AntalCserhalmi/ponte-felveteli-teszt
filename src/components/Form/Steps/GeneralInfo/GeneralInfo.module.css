@@ -1,0 +1,30 @@
+.wrapper{
+    max-width: 23rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.label{
+    margin: 2rem 0 0 0;
+}
+
+.input{
+    width: 100%;
+    padding: 0.25rem;
+
+    font-size: 1.2rem;
+    border: transparent;
+    border-radius: 5px;
+}
+
+.input:focus-visible{
+    outline: none;
+}
+
+.errorMessage{
+    color: rgb(160, 20, 20);
+    font-size: 0.8rem;
+    word-wrap: break-word;
+}
