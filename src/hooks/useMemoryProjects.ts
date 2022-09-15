@@ -15,21 +15,21 @@ export type Project = {
 export const projects: Array<Project> = [
     {
         id: "1",
-        title: "ABCAA",
+        title: "Ponte.hu",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         employees: [{name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}],
         links: ["https://google.com", "https://google.com", "https://google.com", "https://google.com", "https://google.com", "https://google.com"]
     },
     {
         id: "2",
-        title: "BBBBB",
+        title: "Google.com",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         employees: [{name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}],
         links: ["https://google.com", "https://google.com", "https://google.com", "https://google.com", "https://google.com", "https://google.com"]
     },
     {
         id: "3",
-        title: "cccccc",
+        title: "React.js",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         employees: [{name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}],
         links: ["https://google.com", "https://google.com", "https://google.com", "https://google.com", "https://google.com", "https://google.com"]

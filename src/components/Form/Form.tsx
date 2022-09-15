@@ -60,7 +60,7 @@ const Form = ():JSX.Element => {
         try{
             await uploadProject({
                 title: formData.name,
-                description: formData.description,
+                description: formData.description.length === 0? "Ez egy alapértelmezett leírás": formData.description,
                 employees: formData.employees,
                 links: formData.links
             });
