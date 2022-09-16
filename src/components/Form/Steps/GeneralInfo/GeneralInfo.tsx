@@ -43,7 +43,7 @@ const GeneralInfo = (props: {formData: FormData, setFormData: SetFormData}) => {
 
     return(
         <div className={classes.wrapper}>
-            <label className={classes.label} htmlFor="projectName">Projekt Neve</label>
+            <label className={classes.label} htmlFor="projectName">Projekt Neve<span style={{color: "red"}}>*</span></label>
             <input 
                 id="projectName" 
                 className={classes.input} 

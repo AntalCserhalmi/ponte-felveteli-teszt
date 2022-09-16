@@ -80,7 +80,7 @@ const Employees = (props: {formData: FormData, setFormData: SetFormData}) => {
 
             </div>
             <div className={classes.wrapper}>
-                <label className={classes.label} htmlFor="employeeName">Kolléga neve</label>
+                <label className={classes.label} htmlFor="employeeName">Kolléga neve<span style={{color: "red"}}>*</span></label>
                 <input 
                     className={classes.input} 
                     id="employeeName" 
@@ -91,7 +91,7 @@ const Employees = (props: {formData: FormData, setFormData: SetFormData}) => {
                 <span hidden={errorMessageName == ""} className={classes.errorMessage}>{errorMessageName}</span>
 
 
-                <label className={classes.label} htmlFor="employeePosition">Kolléga beosztása</label>
+                <label className={classes.label} htmlFor="employeePosition">Kolléga beosztása<span style={{color: "red"}}>*</span></label>
                 <input 
                     className={classes.input} 
                     type="text" 
