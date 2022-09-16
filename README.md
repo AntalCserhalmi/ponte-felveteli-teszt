@@ -7,9 +7,9 @@ Ha meg van a NodeJS, akkor fel kell tenni a dependencyket, amit a következő pa
 ### `npm install` vagy `yarn install`
 
 Developer mód futtatásához használd ezt a parancsot:
-### `yarn start`
+### `npm start` vagy `yarn start`
 
 Production build futtatásához használd ezt a parancsot:
-### `yarn build`
+### `npm build` vagy `yarn build`
 
 Ezután a /build mappában találod a lebuildelt kódot.
