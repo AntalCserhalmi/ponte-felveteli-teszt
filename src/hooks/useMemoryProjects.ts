@@ -17,21 +17,21 @@ export const projects: Array<Project> = [
         id: "1",
         title: "Ponte.hu",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        employees: [{name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}],
+        employees: [{name: "Kovács István", position: "Takarító"}, {name: "Nagy János", position: "Marketing"}, {name: "Szög Elek", position: "Takarító"}, {name: "Horváth Elemér", position: "Fejlesztő"}, {name: "Petrovics Éva", position: "Takarító"}, {name: "Kővári András", position: "Tervező"}, {name: "Szabó Nikolett", position: "HR"}],
         links: ["https://google.com", "https://google.com", "https://google.com", "https://google.com", "https://google.com", "https://google.com"]
     },
     {
         id: "2",
         title: "Google.com",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        employees: [{name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}],
+        employees: [{name: "Kovács István", position: "Takarító"}, {name: "Nagy János", position: "Marketing"}, {name: "Szög Elek", position: "Takarító"}, {name: "Horváth Elemér", position: "Fejlesztő"}, {name: "Petrovics Éva", position: "Takarító"}, {name: "Kővári András", position: "Tervező"}, {name: "Szabó Nikolett", position: "HR"}],
         links: ["https://google.com", "https://google.com", "https://google.com", "https://google.com", "https://google.com", "https://google.com"]
     },
     {
         id: "3",
         title: "React.js",
         description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
-        employees: [{name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}, {name: "Kovács Pista", position: "Takarító"}],
+        employees: [{name: "Kovács István", position: "Takarító"}, {name: "Nagy János", position: "Marketing"}, {name: "Szög Elek", position: "Takarító"}, {name: "Horváth Elemér", position: "Fejlesztő"}, {name: "Petrovics Éva", position: "Takarító"}, {name: "Kővári András", position: "Tervező"}, {name: "Szabó Nikolett", position: "HR"}],
         links: ["https://google.com", "https://google.com", "https://google.com", "https://google.com", "https://google.com", "https://google.com"]
     },
 ];
